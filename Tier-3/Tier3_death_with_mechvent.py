@@ -81,13 +81,13 @@ for i in range(0,493):#2673
 	
 
 
-	if len(idx)>1:
+	if len(idx[0])>1:
 	
-		for b in range(1,25):
+		for b in range(1,26):
 			ki=data[int(idx[0][0]):int(idx[0][-1]),b]
 			input_dis[i,b+1]=np.amin(ki[np.nonzero(ki)])
 	else:
-		for b in range(1,25):
+		for b in range(1,26):
 			input_dis[i,b+1]=data[idx[0][0],b]	
 
 	d1=d1.strip()
